@@ -1,0 +1,86 @@
+/* style.css */
+
+:root {
+  --primary-color: #ff003c;
+  --secondary-color: #0f0f0f;
+  --accent-color: #1a1a1a;
+  --text-light: #f0f0f0;
+  --text-muted: #999;
+  --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--secondary-color);
+  color: var(--text-light);
+  font-family: var(--font-main);
+  line-height: 1.6;
+}
+
+header {
+  background: var(--accent-color);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 10px #000;
+}
+
+header h1 {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+}
+
+nav a {
+  color: var(--text-light);
+  margin-left: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--primary-color);
+}
+
+main {
+  padding: 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 3rem;
+  background: #121212;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(255, 0, 60, 0.15);
+  transition: transform 0.3s ease;
+}
+
+section:hover {
+  transform: scale(1.01);
+}
+
+h2, h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.75rem;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--accent-color);
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.3);
+}
