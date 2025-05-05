@@ -1,86 +1,126 @@
-/* style.css */
-
-:root {
-  --primary-color: #ff003c;
-  --secondary-color: #0f0f0f;
-  --accent-color: #1a1a1a;
-  --text-light: #f0f0f0;
-  --text-muted: #999;
-  --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
+/* Reset and base styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  cursor: none;
 }
 
 body {
-  background-color: var(--secondary-color);
-  color: var(--text-light);
-  font-family: var(--font-main);
-  line-height: 1.6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0a0a0a, #10002b);
+  color: #eee;
+  text-align: center;
+  overflow-x: hidden;
 }
 
+/* Rainbow cursor + lesbian pride trail */
+#custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: conic-gradient(red, orange, yellow, green, blue, indigo, violet);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 10000;
+}
+
+.trail {
+  position: fixed;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  background: linear-gradient(to bottom, #d52d00, #ef7627, #ff9a56, #ffffff, #d362a4, #b55690, #a30262);
+  opacity: 0.6;
+}
+
+/* Header */
 header {
-  background: var(--accent-color);
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 0 10px #000;
+  padding: 2rem 1rem 1rem;
+  background: linear-gradient(to right, #1a0033, #000);
+  border-bottom: 2px solid red;
 }
 
 header h1 {
-  color: var(--primary-color);
-  font-size: 1.8rem;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #bb00ff;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 nav a {
-  color: var(--text-light);
-  margin-left: 1.5rem;
+  color: #fff;
   text-decoration: none;
-  transition: color 0.3s;
+  font-size: 1.2rem;
+  border: 1px solid red;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  background-color: #1a0033;
+  transition: background 0.3s;
 }
 
 nav a:hover {
-  color: var(--primary-color);
+  background-color: #29004d;
 }
 
+/* Card layout for sections */
 main {
-  padding: 2rem;
-  max-width: 960px;
-  margin: 0 auto;
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
 
 section {
-  margin-bottom: 3rem;
-  background: #121212;
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.project, .premium-item, .directory {
+  background: #140022;
+  border: 2px solid red;
+  border-radius: 15px;
   padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 0 12px rgba(255, 0, 60, 0.15);
+  width: 300px;
+  text-align: center;
   transition: transform 0.3s ease;
 }
 
-section:hover {
-  transform: scale(1.01);
+.project:hover, .premium-item:hover, .directory:hover {
+  transform: scale(1.05);
+  background-color: #1c0033;
 }
 
-h2, h3 {
-  color: var(--primary-color);
-  margin-bottom: 0.75rem;
+.project h3, .premium-item h3, .directory h3 {
+  color: #a955ff;
+  margin-bottom: 0.5rem;
 }
 
 ul {
-  list-style-type: disc;
-  padding-left: 1.5rem;
+  list-style: none;
+  padding: 0;
 }
 
 footer {
-  text-align: center;
-  padding: 1rem;
-  background: var(--accent-color);
-  color: var(--text-muted);
+  margin-top: 4rem;
+  padding: 2rem;
+  background-color: #0a0a0a;
+  border-top: 2px solid red;
+  color: #aaa;
   font-size: 0.9rem;
-  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.3);
 }
