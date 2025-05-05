@@ -330,3 +330,244 @@ footer {
     text-shadow: 0 0 10px #bb00ff, 0 0 20px #bb00ff;
   }
 }
+
+/* Additional styles for new elements */
+
+/* Card container for better organization */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  width: 100%;
+}
+
+/* Section titles for premium and other pages */
+.section-title {
+  color: #a955ff;
+  font-size: 1.8rem;
+  margin: 2rem 0 1rem;
+  text-align: center;
+  position: relative;
+  padding-bottom: 0.5rem;
+  width: 100%;
+}
+
+.section-title:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(to right, #6e00ff, #bb00ff, #6e00ff);
+  border-radius: 3px;
+}
+
+/* Premium note */
+.premium-note {
+  width: 100%;
+  text-align: center;
+  color: #d9d9ff;
+  margin: 0.5rem 0 1.5rem;
+  font-size: 1.1rem;
+}
+
+/* Highlight card with tag */
+.bot-card.highlight,
+.card.featured {
+  border: 2px solid #bb00ff;
+  box-shadow: 0 5px 20px rgba(187, 0, 255, 0.3);
+  position: relative;
+}
+
+.tag {
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  background: linear-gradient(90deg, #6e00ff, #bb00ff);
+  color: white;
+  padding: 0.3rem 1rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  box-shadow: 0 3px 10px rgba(110, 0, 255, 0.3);
+}
+
+/* Payment methods section */
+.payment-methods {
+  width: 100%;
+  margin: 3rem 0 1rem;
+}
+
+.payment-container {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.payment-card {
+  background: rgba(16, 6, 40, 0.7);
+  border: 1px solid #6e00ff;
+  border-radius: 12px;
+  padding: 1.5rem 3rem;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+}
+
+/* Project hero section */
+.project-hero,
+.directory-hero {
+  background: linear-gradient(rgba(16, 6, 40, 0.7), rgba(16, 6, 40, 0.9)),
+    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="none"/><path d="M25,25 L75,25 L75,75 L25,75 Z" fill="none" stroke="%236e00ff" stroke-width="1" stroke-opacity="0.3"/></svg>');
+}
+
+/* Tech tags for projects */
+.tech-tag {
+  display: inline-block;
+  background: rgba(110, 0, 255, 0.2);
+  color: #bb00ff;
+  padding: 0.2rem 0.7rem;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  margin: 0 0.3rem;
+  border: 1px solid rgba(110, 0, 255, 0.3);
+}
+
+.card-footer {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Features section */
+.features-section {
+  width: 100%;
+  margin: 3rem 0 1rem;
+}
+
+.feature-cards,
+.info-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.feature-card,
+.info-card {
+  background: rgba(16, 6, 40, 0.7);
+  border: 1px solid #6e00ff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 300px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.feature-card h4,
+.info-card h4 {
+  color: #bb00ff;
+  margin-bottom: 0.7rem;
+  font-size: 1.2rem;
+}
+
+/* Directory-specific cards */
+.directory-cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 350px;
+}
+
+.card-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px rgba(110, 0, 255, 0.5);
+}
+
+.card-stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 1rem 0;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-value {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #bb00ff;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: #bbb6d9;
+}
+
+.card-btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #6e00ff, #bb00ff);
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  border: none;
+  margin-top: 0.5rem;
+}
+
+.card-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(110, 0, 255, 0.4);
+  background: linear-gradient(90deg, #8a00ff, #d42dff);
+}
+
+/* Directory info section */
+.directory-info {
+  width: 100%;
+  margin: 3rem 0 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .feature-card,
+  .info-card {
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  .card-stats {
+    gap: 1rem;
+  }
+}
+
+/* Animation for cards */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 5px 15px rgba(110, 0, 255, 0.3);
+  }
+  50% {
+    box-shadow: 0 5px 25px rgba(110, 0, 255, 0.5);
+  }
+  100% {
+    box-shadow: 0 5px 15px rgba(110, 0, 255, 0.3);
+  }
+}
+
+.bot-card.highlight,
+.card.featured {
+  animation: pulse 3s infinite;
+}
