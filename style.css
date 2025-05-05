@@ -518,8 +518,8 @@ footer {
 
 .card-btn {
   display: inline-block;
-  background: linear-gradient(90deg, #6e00ff, #bb00ff);
-  color: black;
+  background: linear-gradient(90deg, #6e00ff, #000000);
+  color: white;
   padding: 0.5rem 1.2rem;
   border-radius: 20px;
   text-decoration: none;
